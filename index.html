@@ -1,0 +1,245 @@
+<!-- <!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTCNN</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .news-container {
+            margin-top: 50px;
+        }
+        .news-title {
+            color: #333;
+        }
+        .news-content {
+            margin-top: 20px;
+        }
+        .author, .date {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        .carousel-item img {
+            width: 50%;
+            height: auto;
+        }
+        .related-news {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JTCNN</a>
+    </nav>
+    <div class="container news-container">
+        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#newsCarousel" data-slide-to="1"></li>
+                <li data-target="#newsCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/82765237_2614441538653890_2272396814684520448_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YUjOWJ9B9z8Q7kNvgGYKX0S&_nc_ht=scontent-tpe1-1.xx&oh=00_AYBwKrN5kNGyFPWGsVOuntLc9JqEcBZRJkPAQZYlfIWFNw&oe=66780319" alt="News Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t31.18172-8/21319070_1369566579808065_5093339707178796404_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dEQK9_GZufIQ7kNvgErk9C2&_nc_ht=scontent-tpe1-1.xx&oh=00_AYCE1bJNm_JycIeoW5_1YT_VjRXxAkklgK4xxUZi0kXc_A&oe=6677F875" alt="News Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.18169-9/10968573_719348541496542_3625452785699545719_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JBt403uUOSIQ7kNvgHNCqyK&_nc_ht=scontent-tpe1-1.xx&oh=00_AYD98Mm4QdAq9HxjNFMUWoLB6-4YBSza2lagFKgNMjChWg&oe=6677E67B" alt="News Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2 class="news-title">陳冠纶獲得數學奧林匹亞金牌</h2>
+                <p class="author">作者: 新聞記者</p>
+                <p class="date">日期: 2024年5月24日</p>
+                <div class="news-content">
+                    <p>我們非常高興地宣布，來自台灣的學生陳冠纶在今年的國際數學奧林匹亞中榮獲金牌！這是他經過多年努力和不懈追求卓越的結果。陳冠纶展現了卓越的數學才能和解決問題的能力，為國家爭光。我們向他表示熱烈的祝賀並期待他在未來取得更多成就。</p>
+                    <p>國際數學奧林匹亞（IMO）是一項歷史悠久、規模宏大的國際數學競賽，每年吸引來自世界各地的頂尖年輕數學家參加。參賽者需要在有限的時間內解決一些極具挑戰性的數學問題，這不僅考驗他們的數學知識，還需要他們具備創造性思維和問題解決能力。</p>
+                    <p>陳冠纶在此次比賽中展現了非凡的才華，特別是在複雜數學理論的應用和解題策略上表現出色。他的指導老師表示，陳冠纶在備戰過程中展現出極大的熱情和毅力，經常花費大量時間研究問題和探討解決方法。他的努力最終得到了回報，為自己和團隊贏得了這一榮譽。</p>
+                    <p>陳冠纶表示，能夠參加國際數學奧林匹亞並獲得金牌，對他來說是一個夢想成真的經歷。他感謝家人、老師和同學們的支持，並希望未來能夠繼續在數學領域深造，為人類知識的進步做出貢獻。</p>
+                    <p>我們再次向陳冠纶表示熱烈的祝賀，並期待他在未來的學術生涯中取得更多輝煌成就。</p>
+                </div>
+            </div>
+        </div>
+        <div class="related-news">
+            <h4>相關新聞</h4>
+            <ul class="list-unstyled">
+                <li class="media my-4">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/110165532_3128067967270693_7515765057971595633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=P83bvBj9p5MQ7kNvgGqGfo9&_nc_ht=scontent-tpe1-1.xx&oh=00_AYCftphBfAPA2DcnpFIXliyo2TLs67TVTsaxIdHgtVZ6dw&oe=6677E7C2" class="mr-3" alt="Related News 1" style="width: 20%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">張立揚對女同學伸出魔爪</h5>
+                        近日有電信色狼出沒於工程四館一樓，請大家多多注意
+                    </div>
+                </li>
+                <li class="media my-4">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/48406851_1278312675634232_1583392216825462784_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ErWfo2d8eE8Q7kNvgFYeIO2&_nc_ht=scontent-tpe1-1.xx&oh=00_AYBJOwqm3wkbLobBfmVR6RvcI72UowY-ZxTcq827MF00Ng&oe=66781073" class="mr-3" alt="Related News 2" style="width: 20%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">鄧宇恩快樂被女老師高跟鞋踩！</h5>
+                        鄧宇恩同學因被女老師的高跟鞋踩到而成為校園話題，他開心地面對這一意外，帶給大家一點歡笑和輕鬆。
+                    </div>
+                </li>
+                <li class="media my-4">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.18169-9/13508968_512645995606980_5826088469968127466_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jjkYgWnrkW8Q7kNvgHeXCna&_nc_ht=scontent-tpe1-1.xx&oh=00_AYCKahIM1vEz-MVSsM6Quds_TjGhoMZm1x5w0Ao7Jgp23g&oe=6677E450" class="mr-3" alt="Related News 3" style="width: 20%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">林胤紊榮獲工研院院士獎章</h5>
+                        大家恭喜胤紊同學受到JTC青睞成功入選工研院計畫人員名單
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTCNN</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            position: relative; /* Added */
+        }
+        /* Added styles for left and right decorative images */
+        .left-decoration, .right-decoration {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px; /* Adjust width as needed */
+            background-color: #333; /* Adjust background color as needed */
+        }
+        .left-decoration {
+            left: 0;
+        }
+        .right-decoration {
+            right: 0;
+        }
+        .news-container {
+            margin-top: 50px;
+            position: relative; /* Added */
+            z-index: 1; /* Added */
+        }
+        .news-title {
+            color: #333;
+        }
+        .news-content {
+            margin-top: 20px;
+        }
+        .author, .date {
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        .carousel-item img {
+            width: 50%;
+            height: auto;
+        }
+        .related-news {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left Decoration -->
+    <div class="left-decoration"></div>
+    <!-- Right Decoration -->
+    <div class="right-decoration"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JTCNN</a>
+    </nav>
+    <div class="container news-container">
+        <!-- Rest of your content -->
+        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#newsCarousel" data-slide-to="1"></li>
+                <li data-target="#newsCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/82765237_2614441538653890_2272396814684520448_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YUjOWJ9B9z8Q7kNvgGYKX0S&_nc_ht=scontent-tpe1-1.xx&oh=00_AYBwKrN5kNGyFPWGsVOuntLc9JqEcBZRJkPAQZYlfIWFNw&oe=66780319" alt="News Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t31.18172-8/21319070_1369566579808065_5093339707178796404_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=dEQK9_GZufIQ7kNvgErk9C2&_nc_ht=scontent-tpe1-1.xx&oh=00_AYCE1bJNm_JycIeoW5_1YT_VjRXxAkklgK4xxUZi0kXc_A&oe=6677F875" alt="News Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.18169-9/10968573_719348541496542_3625452785699545719_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=JBt403uUOSIQ7kNvgHNCqyK&_nc_ht=scontent-tpe1-1.xx&oh=00_AYD98Mm4QdAq9HxjNFMUWoLB6-4YBSza2lagFKgNMjChWg&oe=6677E67B" alt="News Image 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2 class="news-title">陳冠纶獲得數學奧林匹亞金牌</h2>
+                <p class="author">作者: 新聞記者</p>
+                <p class="date">日期: 2024年5月24日</p>
+                <div class="news-content">
+                    <p>我們非常高興地宣布，來自台灣的學生陳冠纶在今年的國際數學奧林匹亞中榮獲金牌！這是他經過多年努力和不懈追求卓越的結果。陳冠纶展現了卓越的數學才能和解決問題的能力，為國家爭光。我們向他表示熱烈的祝賀並期待他在未來取得更多成就。</p>
+                    <p>國際數學奧林匹亞（IMO）是一項歷史悠久、規模宏大的國際數學競賽，每年吸引來自世界各地的頂尖年輕數學家參加。參賽者需要在有限的時間內解決一些極具挑戰性的數學問題，這不僅考驗他們的數學知識，還需要他們具備創造性思維和問題解決能力。</p>
+                    <p>陳冠纶在此次比賽中展現了非凡的才華，特別是在複雜數學理論的應用和解題策略上表現出色。他的指導老師表示，陳冠纶在備戰過程中展現出極大的熱情和毅力，經常花費大量時間研究問題和探討解決方法。他的努力最終得到了回報，為自己和團隊贏得了這一榮譽。</p>
+                    <p>陳冠纶表示，能夠參加國際數學奧林匹亞並獲得金牌，對他來說是一個夢想成真的經歷。他感謝家人、老師和同學們的支持，並希望未來能夠繼續在數學領域深造，為人類知識的進步做出貢獻。</p>
+                    <p>我們再次向陳冠纶表示熱烈的祝賀，並期待他在未來的學術生涯中取得更多輝煌成就。</p>
+                </div>
+            </div>
+        </div>
+        <div class="related-news">
+            <h4>相關新聞</h4>
+            <ul class="list-unstyled">
+                <li class="media my-4">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/110165532_3128067967270693_7515765057971595633_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=P83bvBj9p5MQ7kNvgGqGfo9&_nc_ht=scontent-tpe1-1.xx&oh=00_AYCftphBfAPA2DcnpFIXliyo2TLs67TVTsaxIdHgtVZ6dw&oe=6677E7C2" class="mr-3" alt="Related News 1" style="width: 20%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">張立揚對女同學伸出魔爪</h5>
+                        近日有電信色狼出沒於工程四館一樓，請大家多多注意
+                    </div>
+                </li>
+                <li class="media my-4">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.6435-9/48406851_1278312675634232_1583392216825462784_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ErWfo2d8eE8Q7kNvgFYeIO2&_nc_ht=scontent-tpe1-1.xx&oh=00_AYBJOwqm3wkbLobBfmVR6RvcI72UowY-ZxTcq827MF00Ng&oe=66781073" class="mr-3" alt="Related News 2" style="width: 20%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">鄧宇恩快樂被女老師高跟鞋踩！</h5>
+                        鄧宇恩同學因被女老師的高跟鞋踩到而成為校園話題，他開心地面對這一意外，帶給大家一點歡笑和輕鬆。
+                    </div>
+                </li>
+                <li class="media my-4">
+                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.18169-9/13508968_512645995606980_5826088469968127466_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=jjkYgWnrkW8Q7kNvgHeXCna&_nc_ht=scontent-tpe1-1.xx&oh=00_AYCKahIM1vEz-MVSsM6Quds_TjGhoMZm1x5w0Ao7Jgp23g&oe=6677E450" class="mr-3" alt="Related News 3" style="width: 20%;">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">林胤紊榮獲工研院院士獎章</h5>
+                        大家恭喜胤紊同學受到JTC青睞成功入選工研院計畫人員名單
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
